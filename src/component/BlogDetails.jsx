@@ -33,7 +33,9 @@ const BlogDetails = ({ list }) => {
             </div>
           ) : (
             <center>
-              <h3 className="text-3xl">Post data not available</h3>
+              <h3 className="text-4xl my-36">
+                দুঃখিত! কন্টেন্ট পাওয়া যায়নি! ☹️
+              </h3>
             </center>
           )}
         </div>

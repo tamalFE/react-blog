@@ -3,10 +3,12 @@ import NavBar from './NavBar';
 
 const Layout = ({ children }) => {
   return (
-    <div className="relative">
+    <div>
       <NavBar />
-      <div className="min-h-[80vh] pb-52">{children}</div>
-      <Footer />
+      <div>
+        {children}
+        <Footer />
+      </div>
     </div>
   );
 };
