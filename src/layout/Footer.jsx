@@ -2,10 +2,10 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-neutral text-neutral-content absolute bottom-0">
+    <footer className="footer p-10 bg-neutral text-neutral-content absolute bottom-0 title-font">
       <div>
         <p>
-          দৈনিক বার্তা
+          <span className="text-lg">দৈনিক বার্তা</span>
           <br />
           সর্বাধিক প্রচারিত দৈনিক
         </p>

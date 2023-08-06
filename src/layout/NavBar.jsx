@@ -12,17 +12,9 @@ const NavBar = () => {
     })();
   }, []);
 
-  // useEffect(() => {
-  //   const get = async () => {
-  //     let data = await postCategories();
-  //     setCategories(data);
-  //   };
-  //   get();
-  // }, []);
-
   return (
     <div>
-      <div className="navbar fixed top-0 z-50 shadow bg-base-100">
+      <div className="navbar fixed top-0 z-50 shadow bg-base-100 title-font">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -59,14 +51,13 @@ const NavBar = () => {
               })}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">দৈনিক বার্তা</a>
+          <NavLink to="/" className="btn btn-ghost normal-case text-xl">
+            দৈনিক বার্তা
+          </NavLink>
         </div>
 
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <NavLink to="/">হোম</NavLink>
-            </li>
             {categories.map((item, i) => {
               return (
                 <li key={i}>
